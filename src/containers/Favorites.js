@@ -5,7 +5,7 @@ import { ProductsContext } from '../context/products-context';
 import './Products.css';
 
 const Favorites = props => {
-  const favoriteProducts = useContext(ProductsContext).products.filter(p => p.isFavorite);
+  const favoriteProducts = useContext(ProductsContext).products.filter(p => p.변경안하기);
   let content = <p className="placeholder">Got no favorites yet!</p>;
   if (favoriteProducts.length > 0) {
     content = (
