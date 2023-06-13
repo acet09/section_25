@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-
 import './index.css';
 import App from './App';
-import ProductsProvider from './context/products-context'
+import ProductsProvider from './context/products-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
   <ProductsProvider>
     <BrowserRouter>
@@ -16,12 +14,3 @@ root.render(
     </BrowserRouter>
   </ProductsProvider>,
 );
-
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
-//   </Provider>,
-//   document.getElementById('root')
-// );

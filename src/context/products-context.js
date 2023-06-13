@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 export const ProductsContext = React.createContext({
   products: [],
-  toggleFav: () => { }
+  toggleFav: (id) => { }
 });
 
 export default props => {
-
   const [productsList, setProductsList] = useState([
     {
       id: 'p1',
@@ -48,7 +46,7 @@ export default props => {
       };
       return updatedProducts;
     });
-  }
+  };
 
   return (
     <ProductsContext.Provider
@@ -57,4 +55,4 @@ export default props => {
       {props.children}
     </ProductsContext.Provider >
   );
-}
+};
